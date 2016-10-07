@@ -23,7 +23,7 @@ Influxdb influxdb(INFLUXDB_HOST, INFLUXDB_PORT);
 
 void setup() {
         Serial.begin(115200);
-        WiFiMulti.addAP("SUPER_SECRET", "SUPER_SECRET");
+        WiFiMulti.addAP("SUPER_SECRET_SSID", "SUPER_SECRET_PASS");
         while (WiFiMulti.run() != WL_CONNECTED) {
             Serial.print(". ");
                 delay(100);
